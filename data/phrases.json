@@ -1,0 +1,46 @@
+{
+    "greeting": [
+        "Hi all!", 
+        "Hello,", 
+        "Fellow {{=it.input.employeeNicknamePlural}},"
+    ],
+    "subject": [
+        "Farewell", "See ya around", "Leaving the company", "Goodbye for now", "Last Day at {{=it.input.company}}"
+    ],
+    "thesis": [
+        "It is with a heavy heart that I announce I am leaving {{=it.input.company}}.",
+        "After being with {{=it.input.company}} for more than {{=it.input.years}} years, the time has come to move on.",
+        "After being here for {{=it.input.years}} years, I have decided to pursue another opportunity."
+    ],
+    "closing": [
+        "Farewell,", "Au Revior,", "Goodbye,", "Until we meet again,", "Goodbye for now,", "Cheers,", "Smell ya later!",
+        "Stay in touch!", "Thanks for making it fun"
+    ],
+    "general": [
+        {
+            "phrase": "It's a small world and I'm sure our paths will cross again.",
+            "rank": 5
+        },
+        {
+            "phrase": "The last {{=it.input.years}} years have been a very {{=adj.all}} experience.",
+            "rank": 1
+        },
+        {
+            "phrase": "I'm moving on to a new challenge.",
+            "rank": 1
+        },
+        {
+            "phrase": "The hardest part is saying goodbye to so many {{=adj.people}} people.",
+            "rank": 2
+        },
+        {
+            "phrase": "I will always cherish the memories of my {{=adj.people}} teammates.",
+            "rank": 1
+        },
+        {
+            "phrase": "{{?it.input.project}}Working on {{=it.input.project}} has been incredibly rewarding.{{?}}",
+            "rank": 1
+        }
+    ]
+}
+

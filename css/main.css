@@ -1,0 +1,11 @@
+input.error {
+    border: 1px solid red;
+}
+
+main {
+    font-family: monospace;
+}
+
+label {
+    display: block;
+}
