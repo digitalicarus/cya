@@ -1,8 +1,8 @@
 define([
         'jquery', 
         'dot',
-        'text!../data/adjectives', 
-        'text!../data/phrases', 
+        'text!../data/adjectives.json', 
+        'text!../data/phrases.json'', 
         'text!../tmpl/letter.dot'
 ], function ($, dot, adj, phrase, letter) {
     try {
