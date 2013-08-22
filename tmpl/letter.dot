@@ -1,0 +1,21 @@
+<pre class="mailSubject">Subject: {{=it.subject}}</pre>
+
+<div class="letter">
+    {{=it.greeting}}
+    <p class="letterBody">
+        {{=it.thesis}}
+        {{?it.lastday}}{{=it.lastday}}{{?}}
+        {{~it.phrases :value:idx}}
+            {{=value}}
+        {{~}}
+    </p>
+    <p>
+        {{=it.closing}}<br/>
+        ~{{=it.input.name}}
+    </p>
+    <p>
+    <a href="{{=it.input.contact}}">{{=it.input.contact}}</a>
+    </p>
+</div>
+    
+

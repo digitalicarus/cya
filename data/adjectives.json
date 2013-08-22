@@ -1,0 +1,10 @@
+[
+        {
+            "type": "all",
+            "list": ["fun", "amazing", "awesome"]
+        },
+        {
+            "type": "people",
+            "list": ["passionate", "wonderful", "professional"]
+        }
+]
