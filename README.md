@@ -1,2 +1,3 @@
 cya
 ===
+Farewell email generator
