@@ -12,6 +12,9 @@
         "After being with {{=it.input.company}} for more than {{=it.input.years}} years, the time has come to move on.",
         "After being here for {{=it.input.years}} years, I have decided to pursue another opportunity."
     ],
+    "lastday": [
+        "{{?it.input.lastday}}{{=it.input.lastday}} is my last day.{{?}}"
+    ],
     "closing": [
         "Farewell,", "Au Revior,", "Goodbye,", "Until we meet again,", "Goodbye for now,", "Cheers,", "Smell ya later!",
         "Stay in touch!", "Thanks for making it fun"

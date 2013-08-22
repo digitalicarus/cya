@@ -4,6 +4,7 @@
     {{=it.greeting}}
     <p class="letterBody">
         {{=it.thesis}}
+        {{?it.lastday}}{{=it.lastday}}{{?}}
         {{~it.phrases :value:idx}}
             {{=value}}
         {{~}}
@@ -13,9 +14,8 @@
         ~{{=it.input.name}}
     </p>
     <p>
-    {{~it.contact :value:idx}}
-        {{=value}}<br/>
-    {{~}}
+    <a href="{{=it.input.contact}}">{{=it.input.contact}}</a>
+    </p>
 </div>
     
 

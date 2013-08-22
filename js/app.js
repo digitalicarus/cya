@@ -2,7 +2,7 @@ define([
         'jquery', 
         'dot',
         'text!../data/adjectives.json', 
-        'text!../data/phrases.json'', 
+        'text!../data/phrases.json', 
         'text!../tmpl/letter.dot'
 ], function ($, dot, adj, phrase, letter) {
     try {
@@ -14,7 +14,7 @@ define([
     }
 
     var data               = {}
-    ,   members            = ['greeting', 'subject', 'thesis', 'closing', 'general']
+    ,   members            = ['greeting', 'subject', 'thesis', 'lastday', 'closing', 'general']
     ,   i                  = 0
     ,   tmp                = null // general purpose
     ,   curr               = null
@@ -102,7 +102,7 @@ define([
     // generate new random components
     function randomizeLetter () {
 
-        // random all letter components
+        // randomize all letter components
         for (i = 0; i < members.length; i++ ) {
             curr = members[i];
 
@@ -116,7 +116,7 @@ define([
                 console.log("compiling -- " + phrase[curr][0]);
                 tmpl[curr] = dot.compile(phrase[curr][0]);
             } catch (e) {
-                console.log("problem compiling template", phrase[curr][0]);
+                console.log("problem compiling template", phrase[curr]);
             }
         }
  
@@ -163,8 +163,10 @@ define([
         data.input.name  = getValue('input[name=name]') || '<b>[Your name]</b>';
         data.input.years = getValue('input[name=years]') || '<b>[Years of experience]</b>';
         data.input.project = getValue('input[name=project]');
+        data.input.lastday = getValue('input[name=lastday]');
         data.input.employeeNicknamePlural = getValue('input[name=companypeople]') || '<b>[Employees]</b>';
         data.input.company = getValue('input[name=company]') || '<b>[Company]</b>';
+        data.input.contact= getValue('input[name=contact]') || '<b>[Contact]</b>';
  
         for (i = 0; i < members.length; i++ ) {
             curr = members[i];
